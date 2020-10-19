@@ -1,0 +1,19 @@
+{
+  "manifest_version":2,
+  "name":"CCF会议等级显示",
+  "version":"1.0",
+  "description":"根据dblp的搜索显示文章的CCF等级",
+  "content_scripts": [
+      {
+          "matches": ["https://dblp.uni-trier.de/*"],
+          "js": ["js/showCCF.js"]
+        
+      }
+  ],
+  "permissions":[
+    "https://dblp.uni-trier.de/*",
+    "tabs",
+    "webNavigation"
+  ]
+
+  }
